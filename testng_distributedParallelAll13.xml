@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel = "tests" thread-count="3" name="Suite">
+  <test  name="Test1" >
+  <parameter name = "browser" value = "chrome"/>
+    <classes>
+      <class name="com.vtiger.documentTest.CreateDocumentTest"/>
+      <class name="com.vtiger.organizationTest.CreateOrganizationTest"/>
+      <class name="com.vtiger.contactsTest.CreateContactsTest"/>
+      <class name="com.vtiger.compaignTest.CreateCompaignsWithProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test2">
+  <parameter name = "browser" value = "chrome"/>
+    <classes>
+      <class name="com.vtiger.contactsTest.CreateContactsWithOrganizationsTest"/>
+      <class name="com.vtiger.compaignTest.CreateCampaignTest"/>
+      <class name="com.vtiger.productsTest.CreateProductsTest"/>
+      <class name="com.vtiger.organizationTest.CreateOrganizationDropdownTest"/>  
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test3">
+  <parameter name = "browser" value = "chrome"/>
+    <classes>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgCopyShippingEnabledOrNotTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithShippingAddressTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithoutShippingAddressTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgCopyBillingEnabledOrNotTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithBillingAddressTest"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

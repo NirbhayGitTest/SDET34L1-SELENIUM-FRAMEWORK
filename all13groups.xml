@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="sanity"/>
+<include name="baseclass"/>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.vtiger.practice.FetchMultipleDataTestNGTest"/>
+      <class name="com.vtiger.contactsTest.CreateContactsWithOrganizationsTest"/>
+      <class name="com.vtiger.practice.TestNgDemo1Test"/>
+      <class name="com.vtiger.compaignTest.CreateCampaignTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgCopyShippingEnabledOrNotTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithShippingAddressTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithoutShippingAddressTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgCopyBillingEnabledOrNotTest"/>
+      <class name="com.vtiger.practice.TestNgPracticeTest"/>
+      <class name="com.vtiger.practice.TestNgDemo2Test"/>
+      <class name="com.vtiger.practice.CreateCampaignBeforeGenericTest"/>
+      <class name="com.vtiger.productsTest.CreateProductsTest"/>
+      <class name="com.vtiger.practice.TestNgAssertTest"/>
+      <class name="com.vtiger.organizationTest.CreateOrganizationDropdownTest"/>
+      <class name="com.vtiger.documentTest.CreateDocumentTest"/>
+      <class name="com.vtiger.organizationTest.CreateOrganizationTest"/>
+      <class name="com.vtiger.organization.testcasesTest.CreateOrgWithBillingAddressTest"/>
+      <class name="com.vtiger.contactsTest.CreateContactsTest"/>
+      <class name="com.vtiger.compaignTest.CreateCompaignsWithProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
