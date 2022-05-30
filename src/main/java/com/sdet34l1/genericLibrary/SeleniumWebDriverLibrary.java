@@ -80,7 +80,7 @@ public class SeleniumWebDriverLibrary {
 	 * @param driver
 	 */
 	
-	
+	//Empty Constructor
 	public SeleniumWebDriverLibrary(WebDriver staticDriver)
 	{
 		
