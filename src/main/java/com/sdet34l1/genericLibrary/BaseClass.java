@@ -87,18 +87,18 @@ public class BaseClass {
 		//create instance for all generic utility
 		javalibrary = new JavaLibrary();
 		String url = PropertyFileLibrary.getDataFromPropertyFile("url");
-		//userName = PropertyFileLibrary.getDataFromPropertyFile("userName");
-		//password = PropertyFileLibrary.getDataFromPropertyFile("password");
+		userName = PropertyFileLibrary.getDataFromPropertyFile("userName");
+		password = PropertyFileLibrary.getDataFromPropertyFile("password");
 		String timeout = PropertyFileLibrary.getDataFromPropertyFile("timeout");
-		//String browser = PropertyFileLibrary.getDataFromPropertyFile("browser");
+		String browser = PropertyFileLibrary.getDataFromPropertyFile("browser");
 		longTimeOut = javalibrary.stringToLong(timeout);
 		randomNumber = javalibrary.getRandomNumber(10000);
 		
 		//To fetch data from terminal (Command :-  mvn test -DBROWSER=chrome -DUSERNAME=admin -DPASSWORD=root )
-		browser = System.getProperty("BROWSER");
-		userName = System.getProperty("USERNAME");
-		password = System.getProperty("PASSWORD");
-		
+//		browser = System.getProperty("BROWSER");
+//		userName = System.getProperty("USERNAME");
+//		password = System.getProperty("PASSWORD");
+//		
 		//launch browser instance
 		switch(browser)
 		{
